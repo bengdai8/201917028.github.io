@@ -1,0 +1,22 @@
+/*.x{ 
+    width: 1200px;
+    height: 300px;
+	position:absolute;
+	top:120%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	color:white;
+	background-color:lightblue;
+	text-align: center;
+}*/
+
+
+a{
+	color:white;
+	
+}
+body{
+	background-color: lightblue;
+	background-repeat: repeat; 
+	text-align: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/登录.css"/>
+    <link rel="stylesheet" type="text/css" href="css/导航栏.css"/>
+</head>
+<body>
+    <div class="nav">
+            
+        <br><br><br>
+        </form>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="表单.html">表单</a></li>
+            <li><a href="兴趣爱好.html">兴趣爱好</a></li>
+            <li><a href="登录.html">登录</a></li>
+            
+        
+        </ul>
+</div>  <div class="y22">
+      <img src="pic/bjt.JPG">
+    <P>登录</P>
+    <form action="login.php" method="post" onsubmit="return login();">
+        <input type="text" name="username">
+        <input type="submit" name="submit" value="login">
+  </div>
+</body>
+<script>
+    function login(){
+        var username = document.getElementsByName("username")[0].value;
+        if( username.trim().length < 1 ){
+            alert("用户名不能为空");
+            return false;
+        }
+        var flag = confirm("尊敬的 " + username + " 是否确认登录?");
+ 
+        if( flag != true ){  return false; }
+        var pwd = prompt("请输入密码");
+        if( pwd.trim().length < 1 ){
+            alert("密码不能为空");
+            return false;
+        }
+        return true;
+    }  
+</script>
+<html>
+
